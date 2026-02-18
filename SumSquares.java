@@ -27,8 +27,10 @@ public class SumSquares {
 
         System.out.println("Sum of squares from " + startNum + " to " + endNum + ":");
         int total = 0;
-        for (int i = startNum; i < endNum + 1; ++i) {
+        int i = startNum;
+        while (i < (endNum + 1)) {
             total += (i*i);
+            ++i;
         }
         
         System.out.println(total);
